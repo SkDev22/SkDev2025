@@ -88,7 +88,7 @@ const Projects = () => {
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
                 officia quisquam debitis qui libero rem.
               </p>
-              <Link to="http://google.com">GitHub</Link>
+              <Link to="https://github.com/SkDev22/SkDev2025">GitHub</Link>
             </GlareHover>
             <GlareHover
               glareColor="#ffffff"
