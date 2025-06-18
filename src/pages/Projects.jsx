@@ -6,6 +6,8 @@ import { GrUserManager } from "react-icons/gr";
 import { MdOutlineNoFood } from "react-icons/md";
 import { PiPlanetBold } from "react-icons/pi";
 import { RiMovie2AiLine } from "react-icons/ri";
+import { GiArchiveResearch } from "react-icons/gi";
+import { AiOutlineSchedule } from "react-icons/ai";
 
 const Projects = () => {
   return (
@@ -219,8 +221,9 @@ const Projects = () => {
                 color: "#ffffff",
               }}
             >
+              <GiArchiveResearch className="bg-[#FFB6C1] rounded-full text-4xl p-1.5" />
               <h1 className="text-xl font-bold font-family-Poppins">
-                SkDev Portfolio
+                Research
               </h1>
               <p className="font-family-Ubuntu text-pretty text-gray-300">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
@@ -252,8 +255,9 @@ const Projects = () => {
                 color: "#ffffff",
               }}
             >
+              <AiOutlineSchedule className="bg-[#FDD5B1] rounded-full text-4xl p-1.5" />
               <h1 className="text-xl font-bold font-family-Poppins">
-                Fooddyyy
+                Schedule Management System
               </h1>
               <p className="font-family-Ubuntu text-pretty text-gray-300">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
