@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme {
+  --font-family-Ubuntu: "Ubuntu", sans-serif;
+  --font-family-FiraSans: "Fira Sans", sans-serif;
+  --font-family-Poppins: "Poppins", sans-serif;
+  --font-family-EduNSWACTCursive: "Edu NSW ACT Cursive", sans-serif;
+}
