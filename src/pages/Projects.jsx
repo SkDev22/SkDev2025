@@ -222,7 +222,7 @@ const Projects = () => {
               <h1 className="text-xl font-bold font-family-Poppins">
                 SkDev Portfolio
               </h1>
-              <p className="font-family-Ubuntu text-pretty">
+              <p className="font-family-Ubuntu text-pretty text-gray-300">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
                 officia quisquam debitis qui libero rem.
               </p>
@@ -255,7 +255,7 @@ const Projects = () => {
               <h1 className="text-xl font-bold font-family-Poppins">
                 Fooddyyy
               </h1>
-              <p className="font-family-Ubuntu text-pretty">
+              <p className="font-family-Ubuntu text-pretty text-gray-300">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
                 officia quisquam debitis qui libero rem.
               </p>
@@ -286,7 +286,7 @@ const Projects = () => {
               }}
             >
               <h1 className="text-xl font-bold font-family-Poppins">PlanetX</h1>
-              <p className="font-family-Ubuntu text-pretty">
+              <p className="font-family-Ubuntu text-pretty text-gray-300">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
                 officia quisquam debitis qui libero rem.
               </p>
@@ -321,7 +321,7 @@ const Projects = () => {
               <h1 className="text-xl font-bold font-family-Poppins">
                 SkDev Portfolio
               </h1>
-              <p className="font-family-Ubuntu text-pretty">
+              <p className="font-family-Ubuntu text-pretty text-gray-300">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
                 officia quisquam debitis qui libero rem.
               </p>
@@ -354,7 +354,7 @@ const Projects = () => {
               <h1 className="text-xl font-bold font-family-Poppins">
                 Fooddyyy
               </h1>
-              <p className="font-family-Ubuntu text-pretty">
+              <p className="font-family-Ubuntu text-pretty text-gray-300">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
                 officia quisquam debitis qui libero rem.
               </p>
@@ -385,7 +385,7 @@ const Projects = () => {
               }}
             >
               <h1 className="text-xl font-bold font-family-Poppins">PlanetX</h1>
-              <p className="font-family-Ubuntu text-pretty">
+              <p className="font-family-Ubuntu text-pretty text-gray-300">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
                 officia quisquam debitis qui libero rem.
               </p>
@@ -418,7 +418,7 @@ const Projects = () => {
               <h1 className="text-xl font-bold font-family-Poppins">
                 MovieNet
               </h1>
-              <p className="font-family-Ubuntu text-pretty">
+              <p className="font-family-Ubuntu text-pretty text-gray-300">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
                 officia quisquam debitis qui libero rem.
               </p>
@@ -456,7 +456,7 @@ const Projects = () => {
               <h1 className="text-xl font-bold font-family-Poppins">
                 SkDev Portfolio
               </h1>
-              <p className="font-family-Ubuntu text-pretty">
+              <p className="font-family-Ubuntu text-pretty text-gray-300">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
                 officia quisquam debitis qui libero rem.
               </p>
@@ -489,7 +489,7 @@ const Projects = () => {
               <h1 className="text-xl font-bold font-family-Poppins">
                 Fooddyyy
               </h1>
-              <p className="font-family-Ubuntu text-pretty">
+              <p className="font-family-Ubuntu text-pretty text-gray-300">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
                 officia quisquam debitis qui libero rem.
               </p>
@@ -520,7 +520,7 @@ const Projects = () => {
               }}
             >
               <h1 className="text-xl font-bold font-family-Poppins">PlanetX</h1>
-              <p className="font-family-Ubuntu text-pretty">
+              <p className="font-family-Ubuntu text-pretty text-gray-300">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
                 officia quisquam debitis qui libero rem.
               </p>
