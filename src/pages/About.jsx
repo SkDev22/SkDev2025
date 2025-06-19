@@ -1,5 +1,4 @@
 import Navbar from "../components/Navbar";
-import TiltedCard from "../../ReactBits/TiltedCard/TiltedCard";
 import my5 from "../assets/my5.jpeg";
 import BlurText from "../../ReactBits/BlurText/BlurText";
 import Gallary from "../components/Gallary";
@@ -10,7 +9,7 @@ const About = () => {
       <header className="absolute inset-x-0 top-0 z-50 px-10">
         <Navbar />
       </header>
-      <div className="relative isolate px-6 pt-14 lg:px-8">
+      <div className="relative isolate px-6 pt-5 lg:px-8">
         <div
           aria-hidden="true"
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -56,18 +55,10 @@ const About = () => {
             </p>
           </div>
           <div className="flex-1 flex justify-center items-center">
-            <TiltedCard
-              imageSrc={my5}
-              altText="Sahan Kalhara"
-              captionText="Sahan Kalhara"
-              containerHeight="500px"
-              containerWidth="300px"
-              imageHeight="450px"
-              imageWidth="350px"
-              rotateAmplitude={12}
-              scaleOnHover={1.2}
-              showMobileWarning={false}
-              displayOverlayContent={true}
+            <img
+              src={my5}
+              alt="Sahan Image"
+              className=" w-[400px] h-[60%] mt-3 rotate-x-2 rotate-y-16 rotate-6 rounded-xl grayscale-100 hover:animate-pulse hover:rotate-0 hover:grayscale-0"
             />
           </div>
         </div>

@@ -11,6 +11,14 @@ const App = () => {
   return (
     <div className="scroll-smooth">
       <SplashCursor />
+      {/* <Ribbons
+        baseThickness={30}
+        colors={["#ffffff"]}
+        speedMultiplier={0.5}
+        maxAge={500}
+        enableFade={false}
+        enableShaderEffect={true}
+      /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
