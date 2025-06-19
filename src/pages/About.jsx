@@ -1,10 +1,8 @@
 import Navbar from "../components/Navbar";
 import TiltedCard from "../../ReactBits/TiltedCard/TiltedCard";
-// import ProfileCard from "../../ReactBits/ProfileCard/ProfileCard";
 import my5 from "../assets/my5.jpeg";
 import BlurText from "../../ReactBits/BlurText/BlurText";
 import Gallary from "../components/Gallary";
-// import CircularGallery from "../../ReactBits/CircularGallery/CircularGallery";
 
 const About = () => {
   return (
@@ -73,7 +71,9 @@ const About = () => {
             />
           </div>
         </div>
-        <Gallary />
+        <div>
+          <Gallary />
+        </div>
         <div
           aria-hidden="true"
           className="absolute inset-x-0 bottom-0 -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
