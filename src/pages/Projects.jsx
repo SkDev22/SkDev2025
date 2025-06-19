@@ -1,13 +1,59 @@
 import BlurText from "../../ReactBits/BlurText/BlurText";
 import Navbar from "../components/Navbar";
-import GlareHover from "../../ReactBits/GlareHover/GlareHover";
-import { Link } from "react-router-dom";
 import { GrUserManager } from "react-icons/gr";
 import { MdOutlineNoFood } from "react-icons/md";
 import { PiPlanetBold } from "react-icons/pi";
 import { RiMovie2AiLine } from "react-icons/ri";
 import { GiArchiveResearch } from "react-icons/gi";
 import { AiOutlineSchedule } from "react-icons/ai";
+import ProjectCard from "../components/ProjectCard";
+
+const projects = [
+  {
+    icon: GrUserManager,
+    iconBg: "#FA8070",
+    title: "SkDev Portfolio",
+    description: "Personal portfolio website showcasing my work and skills.",
+    githubLink: "https://github.com/SkDev22/SkDev2025",
+    liveLink: "https://github.com/SkDev22/SkDev2025",
+    bgColor: "#1b263b",
+  },
+  {
+    icon: MdOutlineNoFood,
+    iconBg: "#98FF98",
+    title: "Fooddyyy",
+    description: "A modern food ordering and delivery system.",
+    githubLink: "https://github.com/SkDev22/Fooddyyy",
+  },
+  {
+    icon: PiPlanetBold,
+    iconBg: "#87CEEB",
+    title: "PlanetX",
+    description: "Educational planetary exploration web app.",
+    githubLink: "https://github.com/SkDev22/PlanetX",
+  },
+  {
+    icon: RiMovie2AiLine,
+    iconBg: "#B19CD9",
+    title: "MovieNet",
+    description: "Movie search and recommendation platform.",
+    githubLink: "https://github.com/SkDev22/MovieNet",
+  },
+  {
+    icon: GiArchiveResearch,
+    iconBg: "#FFB6C1",
+    title: "Research",
+    description: "Research-based web application with experimental features.",
+    githubLink: "http://google.com",
+  },
+  {
+    icon: AiOutlineSchedule,
+    iconBg: "#FDD5B1",
+    title: "Schedule Management System",
+    description: "Web-based schedule planner and organizer.",
+    githubLink: "https://github.com/SkDev22/Fooddyyy",
+  },
+];
 
 const Projects = () => {
   return (
@@ -56,483 +102,21 @@ const Projects = () => {
           </div>
           <div className="flex-1 flex justify-center items-center"></div>
         </div>
-        <div className="mt-20 px-28 flex flex-col justify-center gap-5">
-          <div className="flex justify-between items-center gap-5">
-            <GlareHover
-              glareColor="#ffffff"
-              glareOpacity={0.3}
-              glareAngle={-30}
-              glareSize={300}
-              transitionDuration={900}
-              playOnce={false}
-              style={{
-                width: "400px",
-                height: "300px",
-                backgroundColor: "#1b263b",
-                borderRadius: "0.9rem",
-                border: "transparent",
-                boxShadow:
-                  "0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)",
-                display: "flex",
-                flexDirection: "column",
-                padding: "1rem",
-                alignItems: "start",
-                justifyContent: "between",
-                gap: "1rem",
-                color: "#ffffff",
-              }}
-            >
-              <GrUserManager className="bg-[#FA8070] rounded-full text-4xl p-1.5" />
-              <h1 className="text-xl font-bold font-family-Poppins">
-                SkDev Portfolio
-              </h1>
-              <p className="font-family-Ubuntu text-pretty text-gray-300">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
-                officia quisquam debitis qui libero rem.
-              </p>
-              <Link to="https://github.com/SkDev22/SkDev2025">GitHub</Link>
-            </GlareHover>
-            <GlareHover
-              glareColor="#ffffff"
-              glareOpacity={0.3}
-              glareAngle={-30}
-              glareSize={300}
-              transitionDuration={900}
-              playOnce={false}
-              style={{
-                width: "400px",
-                height: "300px",
-                backgroundColor: "#001233",
-                borderRadius: "0.9rem",
-                border: "transparent",
-                boxShadow:
-                  "0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)",
-                display: "flex",
-                flexDirection: "column",
-                padding: "1rem",
-                alignItems: "start",
-                justifyContent: "between",
-                gap: "1rem",
-                color: "#ffffff",
-              }}
-            >
-              <MdOutlineNoFood className="bg-[#98FF98] rounded-full text-4xl p-1.5" />
-              <h1 className="text-xl font-bold font-family-Poppins">
-                Fooddyyy
-              </h1>
-              <p className="font-family-Ubuntu text-pretty text-gray-300">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
-                officia quisquam debitis qui libero rem.
-              </p>
-              <Link to="https://github.com/SkDev22/Fooddyyy">GitHub</Link>
-            </GlareHover>
-            <GlareHover
-              glareColor="#ffffff"
-              glareOpacity={0.3}
-              glareAngle={-30}
-              glareSize={300}
-              transitionDuration={900}
-              playOnce={false}
-              style={{
-                width: "400px",
-                height: "300px",
-                backgroundColor: "#001233",
-                borderRadius: "0.9rem",
-                border: "transparent",
-                boxShadow:
-                  "0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)",
-                display: "flex",
-                flexDirection: "column",
-                padding: "1rem",
-                alignItems: "start",
-                justifyContent: "between",
-                gap: "1rem",
-                color: "#ffffff",
-              }}
-            >
-              <PiPlanetBold className="bg-[#87CEEB] rounded-full text-4xl p-1.5" />
-              <h1 className="text-xl font-bold font-family-Poppins">PlanetX</h1>
-              <p className="font-family-Ubuntu text-pretty text-gray-300">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
-                officia quisquam debitis qui libero rem.
-              </p>
-              <Link to="https://github.com/SkDev22/PlanetX">GitHub</Link>
-            </GlareHover>
-            <GlareHover
-              glareColor="#ffffff"
-              glareOpacity={0.3}
-              glareAngle={-30}
-              glareSize={300}
-              transitionDuration={900}
-              playOnce={false}
-              style={{
-                width: "400px",
-                height: "300px",
-                backgroundColor: "#001233",
-                borderRadius: "0.9rem",
-                border: "transparent",
-                boxShadow:
-                  "0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)",
-                display: "flex",
-                flexDirection: "column",
-                padding: "1rem",
-                alignItems: "start",
-                justifyContent: "between",
-                gap: "1rem",
-                color: "#ffffff",
-              }}
-            >
-              <RiMovie2AiLine className="bg-[#B19CD9] rounded-full text-4xl p-1.5" />
-              <h1 className="text-xl font-bold font-family-Poppins">
-                MovieNet
-              </h1>
-              <p className="font-family-Ubuntu text-pretty text-gray-300">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
-                officia quisquam debitis qui libero rem.
-              </p>
-              <div>
-                {/* {<icons.FaGitAlt />} */}
-                <Link to="https://github.com/SkDev22/MovieNet">GitHub</Link>
+        <div className="mt-20 px-28 flex flex-col gap-5">
+          {projects
+            .reduce((rows, item, index) => {
+              if (index % 3 === 0) rows.push([]);
+              rows[rows.length - 1].push(item);
+              return rows;
+            }, [])
+            .map((row, i) => (
+              <div key={i} className="flex justify-between items-center gap-5">
+                {row.map((project, j) => (
+                  <ProjectCard key={j} {...project} />
+                ))}
               </div>
-            </GlareHover>
-          </div>
-          <div className="flex justify-between items-center gap-5">
-            <GlareHover
-              glareColor="#ffffff"
-              glareOpacity={0.3}
-              glareAngle={-30}
-              glareSize={300}
-              transitionDuration={900}
-              playOnce={false}
-              style={{
-                width: "400px",
-                height: "300px",
-                backgroundColor: "#001233",
-                borderRadius: "0.9rem",
-                border: "transparent",
-                boxShadow:
-                  "0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)",
-                display: "flex",
-                flexDirection: "column",
-                padding: "1rem",
-                alignItems: "start",
-                justifyContent: "between",
-                gap: "1rem",
-                color: "#ffffff",
-              }}
-            >
-              <GiArchiveResearch className="bg-[#FFB6C1] rounded-full text-4xl p-1.5" />
-              <h1 className="text-xl font-bold font-family-Poppins">
-                Research
-              </h1>
-              <p className="font-family-Ubuntu text-pretty text-gray-300">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
-                officia quisquam debitis qui libero rem.
-              </p>
-              <Link to="http://google.com">GitHub</Link>
-            </GlareHover>
-            <GlareHover
-              glareColor="#ffffff"
-              glareOpacity={0.3}
-              glareAngle={-30}
-              glareSize={300}
-              transitionDuration={900}
-              playOnce={false}
-              style={{
-                width: "400px",
-                height: "300px",
-                backgroundColor: "#001233",
-                borderRadius: "0.9rem",
-                border: "transparent",
-                boxShadow:
-                  "0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)",
-                display: "flex",
-                flexDirection: "column",
-                padding: "1rem",
-                alignItems: "start",
-                justifyContent: "between",
-                gap: "1rem",
-                color: "#ffffff",
-              }}
-            >
-              <AiOutlineSchedule className="bg-[#FDD5B1] rounded-full text-4xl p-1.5" />
-              <h1 className="text-xl font-bold font-family-Poppins">
-                Schedule Management System
-              </h1>
-              <p className="font-family-Ubuntu text-pretty text-gray-300">
-                Lorem ipsum dolor sit, amet , consectetur adipisicing elit.
-                Saepe officia quisquam debitis qui libero rem.
-              </p>
-              <Link to="https://github.com/SkDev22/Fooddyyy">GitHub</Link>
-            </GlareHover>
-            <GlareHover
-              glareColor="#ffffff"
-              glareOpacity={0.3}
-              glareAngle={-30}
-              glareSize={300}
-              transitionDuration={900}
-              playOnce={false}
-              style={{
-                width: "400px",
-                height: "300px",
-                backgroundColor: "#001233",
-                borderRadius: "0.9rem",
-                border: "transparent",
-                boxShadow:
-                  "0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)",
-                display: "flex",
-                flexDirection: "column",
-                padding: "1rem",
-                alignItems: "start",
-                justifyContent: "between",
-                gap: "1rem",
-                color: "#ffffff",
-              }}
-            >
-              <h1 className="text-xl font-bold font-family-Poppins">PlanetX</h1>
-              <p className="font-family-Ubuntu text-pretty text-gray-300">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
-                officia quisquam debitis qui libero rem.
-              </p>
-              <Link to="https://github.com/SkDev22/PlanetX">GitHub</Link>
-            </GlareHover>
-          </div>
-          <div className="flex justify-between items-center gap-5">
-            <GlareHover
-              glareColor="#ffffff"
-              glareOpacity={0.3}
-              glareAngle={-30}
-              glareSize={300}
-              transitionDuration={900}
-              playOnce={false}
-              style={{
-                width: "400px",
-                height: "300px",
-                backgroundColor: "#001233",
-                borderRadius: "0.9rem",
-                border: "transparent",
-                boxShadow:
-                  "0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)",
-                display: "flex",
-                flexDirection: "column",
-                padding: "1rem",
-                alignItems: "start",
-                justifyContent: "between",
-                gap: "1rem",
-                color: "#ffffff",
-              }}
-            >
-              <h1 className="text-xl font-bold font-family-Poppins">
-                SkDev Portfolio
-              </h1>
-              <p className="font-family-Ubuntu text-pretty text-gray-300">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
-                officia quisquam debitis qui libero rem.
-              </p>
-              <Link to="http://google.com">GitHub</Link>
-            </GlareHover>
-            <GlareHover
-              glareColor="#ffffff"
-              glareOpacity={0.3}
-              glareAngle={-30}
-              glareSize={300}
-              transitionDuration={900}
-              playOnce={false}
-              style={{
-                width: "400px",
-                height: "300px",
-                backgroundColor: "#001233",
-                borderRadius: "0.9rem",
-                border: "transparent",
-                boxShadow:
-                  "0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)",
-                display: "flex",
-                flexDirection: "column",
-                padding: "1rem",
-                alignItems: "start",
-                justifyContent: "between",
-                gap: "1rem",
-                color: "#ffffff",
-              }}
-            >
-              <h1 className="text-xl font-bold font-family-Poppins">
-                Fooddyyy
-              </h1>
-              <p className="font-family-Ubuntu text-pretty text-gray-300">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
-                officia quisquam debitis qui libero rem.
-              </p>
-              <Link to="https://github.com/SkDev22/Fooddyyy">GitHub</Link>
-            </GlareHover>
-            <GlareHover
-              glareColor="#ffffff"
-              glareOpacity={0.3}
-              glareAngle={-30}
-              glareSize={300}
-              transitionDuration={900}
-              playOnce={false}
-              style={{
-                width: "400px",
-                height: "300px",
-                backgroundColor: "#001233",
-                borderRadius: "0.9rem",
-                border: "transparent",
-                boxShadow:
-                  "0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)",
-                display: "flex",
-                flexDirection: "column",
-                padding: "1rem",
-                alignItems: "start",
-                justifyContent: "between",
-                gap: "1rem",
-                color: "#ffffff",
-              }}
-            >
-              <h1 className="text-xl font-bold font-family-Poppins">PlanetX</h1>
-              <p className="font-family-Ubuntu text-pretty text-gray-300">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
-                officia quisquam debitis qui libero rem.
-              </p>
-              <Link to="https://github.com/SkDev22/PlanetX">GitHub</Link>
-            </GlareHover>
-            <GlareHover
-              glareColor="#ffffff"
-              glareOpacity={0.3}
-              glareAngle={-30}
-              glareSize={300}
-              transitionDuration={900}
-              playOnce={false}
-              style={{
-                width: "400px",
-                height: "300px",
-                backgroundColor: "#001233",
-                borderRadius: "0.9rem",
-                border: "transparent",
-                boxShadow:
-                  "0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)",
-                display: "flex",
-                flexDirection: "column",
-                padding: "1rem",
-                alignItems: "start",
-                justifyContent: "between",
-                gap: "1rem",
-                color: "#ffffff",
-              }}
-            >
-              <h1 className="text-xl font-bold font-family-Poppins">
-                MovieNet
-              </h1>
-              <p className="font-family-Ubuntu text-pretty text-gray-300">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
-                officia quisquam debitis qui libero rem.
-              </p>
-              <div>
-                {/* {<icons.FaGitAlt />} */}
-                <Link to="https://github.com/SkDev22/MovieNet">GitHub</Link>
-              </div>
-            </GlareHover>
-          </div>
-          <div className="flex justify-baseline items-center gap-5">
-            <GlareHover
-              glareColor="#ffffff"
-              glareOpacity={0.3}
-              glareAngle={-30}
-              glareSize={300}
-              transitionDuration={900}
-              playOnce={false}
-              style={{
-                width: "400px",
-                height: "300px",
-                backgroundColor: "#001233",
-                borderRadius: "0.9rem",
-                border: "transparent",
-                boxShadow:
-                  "0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)",
-                display: "flex",
-                flexDirection: "column",
-                padding: "1rem",
-                alignItems: "start",
-                justifyContent: "between",
-                gap: "1rem",
-                color: "#ffffff",
-              }}
-            >
-              <h1 className="text-xl font-bold font-family-Poppins">
-                SkDev Portfolio
-              </h1>
-              <p className="font-family-Ubuntu text-pretty text-gray-300">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
-                officia quisquam debitis qui libero rem.
-              </p>
-              <Link to="http://google.com">GitHub</Link>
-            </GlareHover>
-            <GlareHover
-              glareColor="#ffffff"
-              glareOpacity={0.3}
-              glareAngle={-30}
-              glareSize={300}
-              transitionDuration={900}
-              playOnce={false}
-              style={{
-                width: "400px",
-                height: "300px",
-                backgroundColor: "#001233",
-                borderRadius: "0.9rem",
-                border: "transparent",
-                boxShadow:
-                  "0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)",
-                display: "flex",
-                flexDirection: "column",
-                padding: "1rem",
-                alignItems: "start",
-                justifyContent: "between",
-                gap: "1rem",
-                color: "#ffffff",
-              }}
-            >
-              <h1 className="text-xl font-bold font-family-Poppins">
-                Fooddyyy
-              </h1>
-              <p className="font-family-Ubuntu text-pretty text-gray-300">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
-                officia quisquam debitis qui libero rem.
-              </p>
-              <Link to="https://github.com/SkDev22/Fooddyyy">GitHub</Link>
-            </GlareHover>
-            <GlareHover
-              glareColor="#ffffff"
-              glareOpacity={0.3}
-              glareAngle={-30}
-              glareSize={300}
-              transitionDuration={900}
-              playOnce={false}
-              style={{
-                width: "400px",
-                height: "300px",
-                backgroundColor: "#001233",
-                borderRadius: "0.9rem",
-                border: "transparent",
-                boxShadow:
-                  "0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)",
-                display: "flex",
-                flexDirection: "column",
-                padding: "1rem",
-                alignItems: "start",
-                justifyContent: "between",
-                gap: "1rem",
-                color: "#ffffff",
-              }}
-            >
-              <h1 className="text-xl font-bold font-family-Poppins">PlanetX</h1>
-              <p className="font-family-Ubuntu text-pretty text-gray-300">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
-                officia quisquam debitis qui libero rem.
-              </p>
-              <Link to="https://github.com/SkDev22/PlanetX">GitHub</Link>
-            </GlareHover>
-          </div>
+            ))}
         </div>
-
         <div
           aria-hidden="true"
           className="absolute inset-x-0 bottom-0 -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
