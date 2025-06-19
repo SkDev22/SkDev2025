@@ -25,7 +25,7 @@ const Technologies = () => {
   } = icons;
 
   return (
-    <div className="relative isolate px-6 pt-14 lg:px-8 bg-black">
+    <div className="relative isolate px-6 pt-14 lg:px-8 bg-[#0D1B2A]">
       {/* Top Background Blur */}
       <div
         aria-hidden="true"

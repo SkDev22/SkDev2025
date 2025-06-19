@@ -6,7 +6,7 @@ import Gallary from "../components/Gallary";
 
 const About = () => {
   return (
-    <div className="bg-black h-auto">
+    <div className="bg-[#0D1B2A] h-auto">
       <header className="absolute inset-x-0 top-0 z-50 px-10">
         <Navbar />
       </header>
