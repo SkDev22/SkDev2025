@@ -5,7 +5,7 @@ import my8 from "../assets/my8.jpeg";
 
 const Images = () => {
   return (
-    <div className="h-auto top-0 flex justify-between px-10">
+    <div className="h-auto top-0 flex justify-between px-10 bg-black">
       <img
         src={my1}
         alt="Sahan Image 01"

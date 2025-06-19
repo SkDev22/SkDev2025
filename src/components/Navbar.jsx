@@ -20,7 +20,7 @@ const Navbar = () => {
         className="flex items-center justify-between p-6 lg:px-8"
       >
         <div className="flex lg:flex-1">
-          <h1 className="text-2xl font-semibold font-family-EduNSWACTCursive">
+          <h1 className="text-2xl font-semibold text-white font-family-EduNSWACTCursive">
             SkDev
           </h1>
         </div>
@@ -39,7 +39,7 @@ const Navbar = () => {
             <Link
               key={item.name}
               to={item.href}
-              className="text-sm/6 font-semibold text-gray-900 font-family-Poppins"
+              className="text-sm/6 font-semibold text-white font-family-Poppins"
             >
               {item.name}
             </Link>

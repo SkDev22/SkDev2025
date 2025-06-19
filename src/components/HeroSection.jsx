@@ -7,7 +7,7 @@ import Navbar from "./Navbar";
 
 export default function Example() {
   return (
-    <div className="bg-white h-screen">
+    <div className="bg-black h-screen">
       <header className="absolute inset-x-0 top-0 z-50 px-10">
         <Navbar />
       </header>
@@ -29,7 +29,7 @@ export default function Example() {
             <h1 className="text-5xl font-bold tracking-tight text-balance text-blue-600 sm:text-[85px] font-family-Poppins">
               Software Engineer and Designer
             </h1>
-            <p className="mt-8 text-lg font-medium text-pretty text-blue-900 font-family-Ubuntu sm:text-xl/8 ">
+            <p className="mt-8 text-lg font-medium text-pretty text-white font-family-Ubuntu sm:text-xl/8 ">
               Hello! I'm{" "}
               <span className="text-blue-600 font-semibold px-2 text-[22px] rounded-lg">
                 Sahan Kalhara
@@ -42,11 +42,11 @@ export default function Example() {
             </p>
           </div>
           <div className="flex justify-center items-center gap-x-6 mt-8">
-            <FaFacebookSquare className="text-3xl text-blue-900 hover:text-blue-600 cursor-pointer" />
-            <FaSquareInstagram className="text-3xl text-blue-900 hover:text-blue-600 cursor-pointer" />
-            <AiFillTikTok className="text-[33px] text-blue-900 hover:text-blue-600 cursor-pointer" />
-            <FaLinkedin className="text-3xl text-blue-900 hover:text-blue-600 cursor-pointer" />
-            <FaGithub className="text-3xl text-blue-900 hover:text-blue-600 cursor-pointer" />
+            <FaFacebookSquare className="text-3xl text-white hover:text-blue-600 cursor-pointer" />
+            <FaSquareInstagram className="text-3xl text-white hover:text-blue-600 cursor-pointer" />
+            <AiFillTikTok className="text-[33px] text-white hover:text-blue-600 cursor-pointer" />
+            <FaLinkedin className="text-3xl text-white hover:text-blue-600 cursor-pointer" />
+            <FaGithub className="text-3xl text-white hover:text-blue-600 cursor-pointer" />
           </div>
         </div>
         <div

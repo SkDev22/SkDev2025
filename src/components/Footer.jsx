@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
-    <div className="flex justify-between pt-10 px-32 text-pretty">
+    <div className="flex justify-between pt-10 pb-2 px-32 text-pretty bg-black">
       <div className="flex">
-        <h1 className="text-2xl font-semibold font-family-EduNSWACTCursive">
+        <h1 className="text-2xl text-white font-semibold font-family-EduNSWACTCursive">
           SkDev
         </h1>
       </div>

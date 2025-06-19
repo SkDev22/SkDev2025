@@ -25,7 +25,7 @@ const Technologies = () => {
   } = icons;
 
   return (
-    <div className="relative isolate px-6 pt-14 lg:px-8">
+    <div className="relative isolate px-6 pt-14 lg:px-8 bg-black">
       {/* Top Background Blur */}
       <div
         aria-hidden="true"
@@ -46,7 +46,7 @@ const Technologies = () => {
           <h2 className="text-4xl font-bold tracking-tight text-blue-600 sm:text-6xl font-family-Poppins">
             Technologies I Use
           </h2>
-          <p className="mt-6 text-lg text-blue-900 sm:text-xl font-family-Ubuntu">
+          <p className="mt-6 text-lg text-white sm:text-xl font-family-Ubuntu">
             I specialize in a range of modern technologies including React,
             Tailwind CSS, Node.js, Express, MongoDB, MySQL, and more. I enjoy
             building responsive, high-performance, and scalable applications.
@@ -54,64 +54,64 @@ const Technologies = () => {
         </div>
         {/* Tech Logos or List */}
         <div className="flex flex-wrap justify-center items-center text-5xl gap-20 mt-10">
-          <div className="text-blue-800 font-semibold">
+          <div className="text-slate-200 font-semibold">
             <FaReact />
           </div>
-          <div className="text-blue-800 font-semibold">
+          <div className="text-slate-200 font-semibold">
             <FaNodeJs />
           </div>
-          <div className="text-blue-800 font-semibold">
+          <div className="text-slate-200 font-semibold">
             <SiNextdotjs />
           </div>
-          <div className="text-blue-800 font-semibold">
+          <div className="text-slate-200 font-semibold">
             <SiExpress />
           </div>
-          <div className="text-blue-800 font-semibold">
+          <div className="text-slate-200 font-semibold">
             <BiLogoTypescript />
           </div>
-          <div className="text-blue-800 font-semibold">
+          <div className="text-slate-200 font-semibold">
             <SiTailwindcss />
           </div>
-          <div className="text-blue-800 font-semibold">
+          <div className="text-slate-200 font-semibold">
             <SiAntdesign />
           </div>
-          <div className="text-blue-800 font-semibold">
+          <div className="text-slate-200 font-semibold">
             <TbBrandFramerMotion />
           </div>
-          <div className="text-blue-800 font-semibold">
+          <div className="text-slate-200 font-semibold">
             <SiShadcnui />
           </div>
-          <div className="text-blue-800 font-semibold">
+          <div className="text-slate-200 font-semibold">
             <SiChakraui />
           </div>
-          <div className="text-blue-800 font-semibold">
+          <div className="text-slate-200 font-semibold">
             <SiMongodb />
           </div>
-          <div className="text-blue-800 font-semibold">
+          <div className="text-slate-200 font-semibold">
             <SiMysql />
           </div>
-          <div className="text-blue-800 font-semibold">
+          <div className="text-slate-200 font-semibold">
             <DiMsqlServer />
           </div>
-          <div className="text-blue-800 font-semibold">
+          <div className="text-slate-200 font-semibold">
             <BiLogoNetlify />
           </div>
-          <div className="text-blue-800 font-semibold">
+          <div className="text-slate-200 font-semibold">
             <SiVercel />
           </div>
-          <div className="text-blue-800 font-semibold">
+          <div className="text-slate-200 font-semibold">
             <FaGitAlt />
           </div>
-          <div className="text-blue-800 font-semibold">
+          <div className="text-slate-200 font-semibold">
             <IoLogoFigma />
           </div>
-          <div className="text-blue-800 font-semibold">
+          <div className="text-slate-200 font-semibold">
             <VscVscode />
           </div>
-          <div className="text-blue-800 font-semibold">
+          <div className="text-slate-200 font-semibold">
             <DiVisualstudio />
           </div>
-          <div className="text-blue-800 font-semibold">
+          <div className="text-slate-200 font-semibold">
             <FaAws />
           </div>
         </div>
