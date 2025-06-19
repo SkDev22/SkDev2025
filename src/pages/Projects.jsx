@@ -260,8 +260,8 @@ const Projects = () => {
                 Schedule Management System
               </h1>
               <p className="font-family-Ubuntu text-pretty text-gray-300">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
-                officia quisquam debitis qui libero rem.
+                Lorem ipsum dolor sit, amet , consectetur adipisicing elit.
+                Saepe officia quisquam debitis qui libero rem.
               </p>
               <Link to="https://github.com/SkDev22/Fooddyyy">GitHub</Link>
             </GlareHover>
