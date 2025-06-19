@@ -3,11 +3,12 @@ import TiltedCard from "../../ReactBits/TiltedCard/TiltedCard";
 // import ProfileCard from "../../ReactBits/ProfileCard/ProfileCard";
 import my5 from "../assets/my5.jpeg";
 import BlurText from "../../ReactBits/BlurText/BlurText";
-import CircularGallery from "../../ReactBits/CircularGallery/CircularGallery";
+import Gallary from "../components/Gallary";
+// import CircularGallery from "../../ReactBits/CircularGallery/CircularGallery";
 
 const About = () => {
   return (
-    <div className="bg-white h-auto">
+    <div className="bg-black h-auto">
       <header className="absolute inset-x-0 top-0 z-50 px-10">
         <Navbar />
       </header>
@@ -32,7 +33,7 @@ const About = () => {
               animateBy="words"
               className="text-[64px] font-bold mb-8 text-blue-600 leading-12 font-family-Poppins"
             />
-            <p className="text-pretty font-medium text-lg text-justify font-family-Ubuntu ">
+            <p className="text-pretty text-white font-medium text-lg text-justify font-family-Ubuntu ">
               From a young age, I’ve been deeply fascinated by how technology
               can reshape the way we live, work, and connect. I wrote my first
               line of code out of curiosity and never looked back — since then,
@@ -72,14 +73,10 @@ const About = () => {
             />
           </div>
         </div>
-        <div className="mb-16">
-          <div style={{ height: "600px", position: "relative" }}>
-            <CircularGallery bend={3} textColor="#000000" borderRadius={0.05} />
-          </div>
-        </div>
+        <Gallary />
         <div
           aria-hidden="true"
-          className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+          className="absolute inset-x-0 bottom-0 -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
         >
           <div
             style={{
