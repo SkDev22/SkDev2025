@@ -22,9 +22,11 @@ const Navbar = () => {
         className="flex items-center justify-between p-6 lg:px-8"
       >
         <div className="flex lg:flex-1">
-          <h1 className="text-2xl font-semibold text-white font-family-EduNSWACTCursive">
-            SkDev
-          </h1>
+          <Link to="/">
+            <h1 className="text-2xl font-semibold text-white font-family-EduNSWACTCursive">
+              SkDev
+            </h1>
+          </Link>
         </div>
         <div className="flex lg:hidden">
           <button
