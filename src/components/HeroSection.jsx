@@ -4,6 +4,7 @@ import { AiFillTikTok } from "react-icons/ai";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
 import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
 
 export default function Example() {
   return (
@@ -42,11 +43,21 @@ export default function Example() {
             </p>
           </div>
           <div className="flex justify-center items-center gap-x-6 mt-8">
-            <FaFacebookSquare className="text-3xl text-white hover:text-blue-600 cursor-pointer" />
-            <FaSquareInstagram className="text-3xl text-white hover:text-blue-600 cursor-pointer" />
-            <AiFillTikTok className="text-[33px] text-white hover:text-blue-600 cursor-pointer" />
-            <FaLinkedin className="text-3xl text-white hover:text-blue-600 cursor-pointer" />
-            <FaGithub className="text-3xl text-white hover:text-blue-600 cursor-pointer" />
+            <Link to="https://web.facebook.com/sahan.kalhara.3572">
+              <FaFacebookSquare className="text-3xl text-white hover:text-blue-600 cursor-pointer" />
+            </Link>
+            <Link to="https://www.instagram.com/__sahan_kalhara__/">
+              <FaSquareInstagram className="text-3xl text-white hover:text-blue-600 cursor-pointer" />
+            </Link>
+            <Link to="https://www.tiktok.com/@sahankalhara_98?lang=en">
+              <AiFillTikTok className="text-[33px] text-white hover:text-blue-600 cursor-pointer" />
+            </Link>
+            <Link to="https://www.linkedin.com/in/sahan-kalhara-04b068216/">
+              <FaLinkedin className="text-3xl text-white hover:text-blue-600 cursor-pointer" />
+            </Link>
+            <Link to="https://github.com/SkDev22">
+              <FaGithub className="text-3xl text-white hover:text-blue-600 cursor-pointer" />
+            </Link>
           </div>
         </div>
         <div
