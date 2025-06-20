@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -12,6 +12,8 @@ const navigation = [
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const currentPath = location.pathname;
 
   return (
     <div>
@@ -39,7 +41,11 @@ const Navbar = () => {
             <Link
               key={item.name}
               to={item.href}
-              className="text-sm/6 font-semibold text-white font-family-Poppins"
+              className={`text-sm/6 font-semibold font-family-Poppins ${
+                currentPath === item.href
+                  ? "text-white underline underline-offset-8"
+                  : "text-white hover:underline hover:underline-offset-8"
+              }`}
             >
               {item.name}
             </Link>
@@ -51,6 +57,8 @@ const Navbar = () => {
           </button>
         </div>
       </nav>
+
+      {/* Mobile menu */}
       <Dialog
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
@@ -83,7 +91,12 @@ const Navbar = () => {
                   <Link
                     key={item.name}
                     to={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                    className={`-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold ${
+                      currentPath === item.href
+                        ? "text-blue-600 underline underline-offset-4"
+                        : "text-gray-900 hover:bg-gray-50"
+                    }`}
+                    onClick={() => setMobileMenuOpen(false)}
                   >
                     {item.name}
                   </Link>
