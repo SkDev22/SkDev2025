@@ -1,6 +1,11 @@
 import BlurText from "../../ReactBits/BlurText/BlurText";
 import Navbar from "../components/Navbar";
 import FallingText from "../../ReactBits/FallingText/FallingText";
+import SpotlightCard from "../../ReactBits/SpotlightCard/SpotlightCard";
+import { TbWorldCode } from "react-icons/tb";
+import { CiMobile3 } from "react-icons/ci";
+import { PiNotePencilBold } from "react-icons/pi";
+import { ImPen } from "react-icons/im";
 
 const features = [
   {
@@ -37,7 +42,7 @@ export default function Example() {
       <header className="absolute inset-x-0 top-0 z-50 px-10">
         <Navbar />
       </header>
-      <div className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 py-24 sm:px-6 sm:pt-44 lg:max-w-7xl lg:grid-cols-2 lg:px-8 px-6 pt-5 relative isolate">
+      <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 py-24 sm:px-6 sm:pt-44 lg:max-w-7xl lg:grid-cols-2 lg:px-8 px-6 pt-5 relative isolate">
         <div
           aria-hidden="true"
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -52,22 +57,22 @@ export default function Example() {
         </div>
         <div>
           <BlurText
-            text="I’m Sahan Kalhara"
+            text="What I Offer"
             delay={300}
             animateBy="words"
-            className="text-[50px] font-bold mb-8 text-blue-600 leading-12 font-family-Poppins"
+            className="text-[60px] font-bold mb-8 text-blue-600 leading-12 font-family-Poppins"
           />
           <p className="mt-4 text-gray-200">
-            The walnut wood card tray is precision milled to perfectly fit a
-            stack of Focus cards. The powder coated steel divider separates
-            active cards from new ones, or can be used to archive important task
-            lists.
+            I craft modern various solutions, including responsive websites,
+            custom dashboards, and eye catching designs using React, Tailwind,
+            backend APIs and many tools designed to boost business efficiency
+            and deliver a seamless user experience.
           </p>
 
           <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
             {features.map((feature) => (
-              <div key={feature.name} className="border-t border-gray-200 pt-4">
-                <dt className="font-medium text-white text-xl">
+              <div key={feature.name} className="shadow-md p-2">
+                <dt className="font-medium text-white text-2xl">
                   {feature.name}
                 </dt>
                 <dd className="mt-2 text-sm text-gray-200">
@@ -78,26 +83,42 @@ export default function Example() {
           </dl>
         </div>
         <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
-          <img
-            alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
-            src="https://tailwindcss.com/plus-assets/img/ecommerce-images/product-feature-03-detail-01.jpg"
-            className="rounded-lg bg-gray-100"
-          />
-          <img
-            alt="Top down view of walnut card tray with embedded magnets and card groove."
-            src="https://tailwindcss.com/plus-assets/img/ecommerce-images/product-feature-03-detail-02.jpg"
-            className="rounded-lg bg-gray-100"
-          />
-          <img
-            alt="Side of walnut card tray with card groove and recessed card area."
-            src="https://tailwindcss.com/plus-assets/img/ecommerce-images/product-feature-03-detail-03.jpg"
-            className="rounded-lg bg-gray-100"
-          />
-          <img
-            alt="Walnut card tray filled with cards and card angled in dedicated groove."
-            src="https://tailwindcss.com/plus-assets/img/ecommerce-images/product-feature-03-detail-04.jpg"
-            className="rounded-lg bg-gray-100"
-          />
+          <SpotlightCard
+            className="custom-spotlight-card"
+            spotlightColor="rgba(0, 229, 255, 0.2)"
+          >
+            <h1 className="font-family-Poppins text-xl font-bold">
+              Web Development
+            </h1>
+            <TbWorldCode className="text-8xl" />
+          </SpotlightCard>
+          <SpotlightCard
+            className="custom-spotlight-card"
+            spotlightColor="rgba(0, 229, 255, 0.2)"
+          >
+            <h1 className="font-family-Poppins text-xl font-bold text-center">
+              Mobile App Development
+            </h1>
+            <CiMobile3 className="text-8xl" />
+          </SpotlightCard>
+          <SpotlightCard
+            className="custom-spotlight-card"
+            spotlightColor="rgba(0, 229, 255, 0.2)"
+          >
+            <h1 className="font-family-Poppins text-xl font-bold">
+              UI/UX Design
+            </h1>
+            <PiNotePencilBold className="text-8xl" />
+          </SpotlightCard>
+          <SpotlightCard
+            className="custom-spotlight-card"
+            spotlightColor="rgba(0, 229, 255, 0.2)"
+          >
+            <h1 className="font-family-Poppins text-xl font-bold">
+              Graphic Design
+            </h1>
+            <ImPen className="text-8xl" />
+          </SpotlightCard>
         </div>
       </div>
       <div className="h-[300px] px-20">

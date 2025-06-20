@@ -1,24 +1,22 @@
+import AnimatedCursor from "react-animated-cursor";
 import Footer from "./components/Footer";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Services from "./pages/Services";
 import { Routes, Route } from "react-router-dom";
-// import Ribbons from "../ReactBits/Ribbons/Ribbons";
-import SplashCursor from "../ReactBits/SplashCursor/SplashCursor";
 
 const App = () => {
   return (
     <div className="scroll-smooth">
-      <SplashCursor />
-      {/* <Ribbons
-        baseThickness={30}
-        colors={["#ffffff"]}
-        speedMultiplier={0.5}
-        maxAge={500}
-        enableFade={false}
-        enableShaderEffect={true}
-      /> */}
+      <AnimatedCursor
+        innerSize={15}
+        outerSize={30}
+        innerScale={1.2}
+        outerScale={1.8}
+        innerStyle={{ backgroundColor: "#ffffff" }}
+        outerStyle={{ backgroundColor: "transparent" }}
+      />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
