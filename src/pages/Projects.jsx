@@ -16,42 +16,47 @@ const projects = [
     description: "Personal portfolio website showcasing my work and skills.",
     githubLink: "https://github.com/SkDev22/SkDev2025",
     liveLink: "https://github.com/SkDev22/SkDev2025",
-    bgColor: "#1b263b",
   },
   {
     icon: MdOutlineNoFood,
     iconBg: "#98FF98",
     title: "Fooddyyy",
-    description: "A modern food ordering and delivery system.",
+    description:
+      "Fooddyyy is a place that users can find various food recipes.",
     githubLink: "https://github.com/SkDev22/Fooddyyy",
+    liveLink: "https://fooddyyy.netlify.app/",
   },
   {
     icon: PiPlanetBold,
     iconBg: "#87CEEB",
     title: "PlanetX",
-    description: "Educational planetary exploration web app.",
+    description:
+      "Educational planetary exploration web app. Explore details about planets of the space",
     githubLink: "https://github.com/SkDev22/PlanetX",
   },
   {
     icon: RiMovie2AiLine,
     iconBg: "#B19CD9",
     title: "MovieNet",
-    description: "Movie search and recommendation platform.",
+    description:
+      "Movie search website. search movies using movie name and find it's released date and other details.",
     githubLink: "https://github.com/SkDev22/MovieNet",
   },
   {
     icon: GiArchiveResearch,
     iconBg: "#FFB6C1",
     title: "Research",
-    description: "Research-based web application with experimental features.",
-    githubLink: "http://google.com",
+    description:
+      "Innovative web application designed to provide a seamless, immersive, and efficient booking experience for both seekers and owners.",
+    githubLink: "https://github.com/SkDev22/Models_Research",
   },
   {
     icon: AiOutlineSchedule,
     iconBg: "#FDD5B1",
     title: "Schedule Management System",
-    description: "Web-based schedule planner and organizer.",
-    githubLink: "https://github.com/SkDev22/Fooddyyy",
+    description:
+      "Developed for cleaning service to manage their orders, customer details, labor details, financial details and manage administration department.",
+    githubLink: "https://github.com/SkDev22/Schedule_Management_System",
   },
 ];
 

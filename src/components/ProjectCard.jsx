@@ -38,7 +38,10 @@ const ProjectCard = ({
       }}
     >
       {Icon && (
-        <Icon className={`bg-[${iconBg}] rounded-full text-4xl p-1.5`} />
+        <Icon
+          style={{ backgroundColor: iconBg }}
+          className="rounded-full text-4xl p-1.5"
+        />
       )}
       <h1 className="text-xl font-bold font-family-Poppins">{title}</h1>
       <p className="font-family-Ubuntu text-pretty text-gray-300">
