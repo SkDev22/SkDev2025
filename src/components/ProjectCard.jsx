@@ -65,7 +65,7 @@ const ProjectCard = ({
             className="hover:text-blue-600 flex items-center gap-2"
           >
             <TbWorldWww />
-            Live Demo
+            Live Website
           </Link>
         )}
       </div>
