@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+/* index.css */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0D1B2A;
+  overflow-x: hidden;
+}
+
+
 @theme {
   --font-family-Ubuntu: "Ubuntu", sans-serif;
   --font-family-FiraSans: "Fira Sans", sans-serif;

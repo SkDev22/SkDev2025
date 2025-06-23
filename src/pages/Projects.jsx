@@ -79,35 +79,36 @@ const Projects = () => {
             className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#0022ff] to-[#c300ff] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"
           />
         </div>
-        <div className="mx-auto w-full pt-[135px] flex justify-between items-start px-14 ">
-          <div className="flex-2 pl-16">
+        <div className="mx-auto w-full md:pt-[135px] pt-10 md:flex md:flex-row flex-col justify-between items-start md:px-14 px-6 ">
+          <div className="flex-2 md:pl-16 pl-0">
             <BlurText
-              text="Projects I’ve Built to Create My Own Mark on the World"
+              text="Projects I&apos;ve Built to Create My Own Mark on the World"
               delay={300}
               animateBy="words"
-              className="text-5xl font-bold mb-8 text-blue-600 leading-12 font-family-Poppins"
+              className="md:text-5xl text-4xl font-bold mb-8 text-blue-600 leading-12 font-family-Poppins"
             />
-            <p className="text-pretty text-white font-medium text-lg text-justify font-family-Ubuntu ">
-              Over the years, I’ve poured my passion into building various
+            <p className="text-pretty text-white font-medium text-lg md:text-justify text-left font-family-Ubuntu ">
+              Over the years, I&apos;ve poured my passion into building various
               projects. Each one reflecting my journey as a developer and a
-              problem solver. These are some of the creations I’m most proud of.
+              problem solver. These are some of the creations I&apos;m most
+              proud of.
               <br />
               <br />
-              As someone who’s always curious and constantly learning, I love
+              As someone who&apos;s always curious and constantly learning, I love
               experimenting with new technologies and turning ideas into
               functional, meaningful applications. Many of these projects are
               open-source, so if something catches your eye, feel free to dive
               into the code, share or feedback.
               <br />
               <br />
-              This collection represents not just what I’ve built, but who I am,
+              This collection represents not just what I&apos;ve built, but who I am,
               someone driven by innovation, continuous growth, and the desire to
               make a difference through technology.
             </p>
           </div>
-          <div className="flex-1 flex justify-center items-center"></div>
+          <div className="flex-1 flex justify-center items-center hidden md:block"></div>
         </div>
-        <div className="mt-20 px-28 flex flex-col gap-5">
+        <div className="mt-20 md:px-28 px-6 flex flex-col gap-5">
           {projects
             .reduce((rows, item, index) => {
               if (index % 3 === 0) rows.push([]);
@@ -115,7 +116,7 @@ const Projects = () => {
               return rows;
             }, [])
             .map((row, i) => (
-              <div key={i} className="flex justify-between items-center gap-5">
+              <div key={i} className="flex justify-between md:flex-row flex-col md:items-center items-start gap-5">
                 {row.map((project, j) => (
                   <ProjectCard key={j} {...project} />
                 ))}

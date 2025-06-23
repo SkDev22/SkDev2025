@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 export default function Example() {
   return (
-    <div className="bg-[#0D1B2A] h-screen">
+    <div className="bg-[#0D1B2A] min-h-screen">
       <header className="absolute inset-x-0 top-0 z-50 px-10">
         <Navbar />
       </header>
