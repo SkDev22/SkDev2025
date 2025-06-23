@@ -133,10 +133,9 @@ export default function Example() {
           />
         </div>
       </div>
-      <div className="h-[300px] px-20">
+      <div className="md:h-[300px] h-[900px] md:px-20 px-6">
         <FallingText
-          // text={`React Bits is a library of animated and interactive React components designed to streamline UI development and simplify your workflow.`}
-          text={`I provide modern web, mobile and graphic design solutions including interactive UI components, responsive websites, custom dashboards, and streamlined workflows designed to elevate your brand and enhance user experience.`}
+          text={`I provide modern web, mobile and graphic design solutions including interactive UI components, responsive websites, custom dashboards, and streamlined workflows designed to elevate your brand and enhance user experience. Click me to see the magic!`}
           highlightWords={[
             "web",
             "mobile",
@@ -146,7 +145,9 @@ export default function Example() {
             "enhance",
             "experience",
             "dashboards",
-
+            "magic",
+            "Click",
+            "see",
           ]}
           highlightClass="highlighted"
           trigger="hover"
