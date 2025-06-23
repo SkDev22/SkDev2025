@@ -1,6 +1,8 @@
 import Navbar from "../components/Navbar";
 import BlurText from "../../ReactBits/BlurText/BlurText";
-import { ChevronDownIcon } from "@heroicons/react/24/outline";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
 
 const features = [
   {
@@ -21,7 +23,69 @@ const features = [
   },
 ];
 
+
+
 const Contact = () => {
+  const form = useRef();
+
+  const notify = () =>
+    toast.success("🤝 Thank you! I'll contact you soon.", {
+      position: "bottom-right",
+      autoClose: 4000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
+
+  const notifyError = (msg) =>
+    toast.error(msg, {
+      position: "bottom-right",
+      autoClose: 4000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    const data = new FormData(form.current);
+    const firstName = data.get("first_name");
+    const lastName = data.get("last_name");
+    const email = data.get("user_email");
+    const message = data.get("message");
+    if (!firstName || !lastName || !email || !message) {
+      notifyError("Please fill in all required fields.");
+      return;
+    }
+    emailjs
+      .sendForm(
+        "service_p2sw8c6",
+        "template_gqrork7",
+        form.current,
+        "FjL6iLhlUISza-9SY"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          e.target.reset();
+          notify();
+        },
+        (error) => {
+          console.log(error.text);
+          notifyError("Something went wrong. Please try again later.");
+        }
+      );
+  };
+
+
+
+
   return (
     <div className="bg-[#0D1B2A]">
       <header className="absolute inset-x-0 top-0 z-50 px-10">
@@ -51,7 +115,7 @@ const Contact = () => {
             I specialize in crafting modern, responsive websites, User
             Interfaces, and visually striking graphic designs using React,
             Tailwind CSS, backend APIs and many tools. Whether you need a
-            business-boosting solution or a seamless user experience, I’m here
+            business-boosting solution or a seamless user experience, I'm here
             to help.
             <br />
             <br /> Have a project in mind? Let's connect and bring your ideas to
@@ -72,7 +136,7 @@ const Contact = () => {
           </dl>
         </div>
         <div className="px-6">
-          <form action="#" method="POST" className="mx-auto max-w-xl mt-10">
+          <form ref={form} onSubmit={sendEmail} className="mx-auto max-w-xl mt-10">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <div>
                 <label
@@ -84,9 +148,10 @@ const Contact = () => {
                 <div className="mt-2.5">
                   <input
                     id="first-name"
-                    name="first-name"
+                    name="first_name"
                     type="text"
                     autoComplete="given-name"
+                    required
                     className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                   />
                 </div>
@@ -101,9 +166,10 @@ const Contact = () => {
                 <div className="mt-2.5">
                   <input
                     id="last-name"
-                    name="last-name"
+                    name="last_name"
                     type="text"
-                    autoComplete="family-name"
+                    autoComplete="last-name"
+                    required
                     className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                   />
                 </div>
@@ -118,9 +184,10 @@ const Contact = () => {
                 <div className="mt-2.5">
                   <input
                     id="email"
-                    name="email"
+                    name="user_email"
                     type="email"
                     autoComplete="email"
+                    required
                     className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                   />
                 </div>
@@ -138,6 +205,7 @@ const Contact = () => {
                     id="message"
                     name="message"
                     rows={4}
+                    required
                     className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                     defaultValue={""}
                   />
@@ -153,6 +221,7 @@ const Contact = () => {
               </button>
             </div>
           </form>
+          <ToastContainer />
         </div>
         <div
           aria-hidden="true"
