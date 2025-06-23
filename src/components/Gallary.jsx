@@ -2,7 +2,7 @@ import CircularGallery from "../../ReactBits/CircularGallery/CircularGallery";
 
 const Gallary = () => {
   return (
-    <div className="h-screen">
+    <div className="h-auto md:h-screen">
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div
           aria-hidden="true"
@@ -16,7 +16,7 @@ const Gallary = () => {
             className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#00eeff] to-[#0022ff] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"
           />
         </div>
-        <div style={{ height: "600px", position: "relative" }}>
+        <div style={{ height: "600px", position: "relative" }} >
           <CircularGallery bend={3} textColor="#000000" borderRadius={0.05} />
         </div>
         <div

@@ -11,7 +11,7 @@ const About = () => {
       </header>
       <div className="relative isolate px-6 pt-5 lg:px-8">
         <div
-          aria-hidden="true"
+          aria-hidden="true" 
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
         >
           <div
@@ -22,15 +22,15 @@ const About = () => {
             className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#0022ff] to-[#c300ff] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"
           />
         </div>
-        <div className="mx-auto w-full pt-[135px] flex justify-between items-start px-14 ">
-          <div className="flex-1 pl-16">
+        <div className="md:mx-auto w-full md:pt-[135px] pt-24 flex md:flex-row flex-col justify-between items-start md:px-14 px-6 ">
+          <div className="flex-1 md:pl-16 pl-0">
             <BlurText
               text="I&apos;m Sahan Kalhara"
               delay={300}
               animateBy="words"
-              className="text-[64px] font-bold mb-8 text-blue-600 leading-12 font-family-Poppins"
+              className="md:text-[64px] text-5xl font-bold mb-8 text-blue-600 leading-12 font-family-Poppins"
             />
-            <p className="text-pretty text-white font-medium text-lg text-justify font-family-Ubuntu ">
+            <p className="text-pretty text-white font-medium text-lg md:text-justify text-left font-family-Ubuntu ">
               From a young age, I&apos;ve been deeply fascinated by how technology
               can reshape the way we live, work, and connect. I wrote my first
               line of code out of curiosity and never looked back — since then,
@@ -58,7 +58,7 @@ const About = () => {
             <img
               src={my5}
               alt="Sahan Image"
-              className=" w-[400px] h-[60%] mt-3 rotate-x-2 rotate-y-16 rotate-6 rounded-xl grayscale-100 hover:animate-pulse hover:rotate-0 hover:grayscale-0"
+              className=" w-[400px] h-[60%] md:mt-3 mt-20 rotate-x-2 rotate-y-16 rotate-6 rounded-xl grayscale-100 hover:animate-pulse hover:rotate-0 hover:grayscale-0"
             />
           </div>
         </div>

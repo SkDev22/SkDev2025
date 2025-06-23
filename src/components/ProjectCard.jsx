@@ -21,7 +21,7 @@ const ProjectCard = ({
       transitionDuration={900}
       playOnce={false}
       style={{
-        width: "400px",
+        width: "100%",
         height: "250px",
         backgroundColor: bgColor,
         borderRadius: "0.9rem",
@@ -35,6 +35,7 @@ const ProjectCard = ({
         justifyContent: "start",
         gap: "1rem",
         color: "#ffffff",
+        ...(window.innerWidth >= 768 ? { width: "400px", height: "250px" } : {}),
       }}
     >
       {Icon && (

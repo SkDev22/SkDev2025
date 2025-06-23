@@ -47,7 +47,7 @@ const projects = [
     iconBg: "#FFB6C1",
     title: "Research",
     description:
-      "Innovative web application designed to provide a seamless, immersive, and efficient booking experience for both seekers and owners.",
+      "Innovative web application designed to provide a booking experience for both seekers and owners.",
     githubLink: "https://github.com/SkDev22/Models_Research",
   },
   {
@@ -55,7 +55,7 @@ const projects = [
     iconBg: "#FDD5B1",
     title: "Schedule Management System",
     description:
-      "Developed for cleaning service to manage their orders, customer details, labor details, financial details and manage administration department.",
+      "Developed for cleaning service businesses to manage services.",
     githubLink: "https://github.com/SkDev22/Schedule_Management_System",
   },
 ];
@@ -79,7 +79,7 @@ const Projects = () => {
             className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#0022ff] to-[#c300ff] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"
           />
         </div>
-        <div className="mx-auto w-full md:pt-[135px] pt-10 md:flex md:flex-row flex-col justify-between items-start md:px-14 px-6 ">
+        <div className="mx-auto w-full md:pt-[135px] pt-10 md:flex md:flex-row flex-col justify-between items-start md:px-14 px-0 ">
           <div className="flex-2 md:pl-16 pl-0">
             <BlurText
               text="Projects I&apos;ve Built to Create My Own Mark on the World"
@@ -108,7 +108,7 @@ const Projects = () => {
           </div>
           <div className="flex-1 flex justify-center items-center hidden md:block"></div>
         </div>
-        <div className="mt-20 md:px-28 px-6 flex flex-col gap-5">
+        <div className="mt-20 mb-10 md:mb-0 md:px-28 px-0 flex flex-col gap-5">
           {projects
             .reduce((rows, item, index) => {
               if (index % 3 === 0) rows.push([]);
