@@ -19,7 +19,7 @@ const Navbar = () => {
     <div>
       <nav
         aria-label="Global"
-        className="flex items-center justify-between p-6 lg:px-8"
+        className="flex items-center justify-between md:py-6 md:px-6 py-6 lg:px-8"
       >
         <div className="flex lg:flex-1">
           <Link to="/">
@@ -54,9 +54,11 @@ const Navbar = () => {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <button className="bg-blue-600 px-10 py-2 rounded-xl text-white font-semibold font-family-Poppins cursor-pointer hover:bg-blue-700">
-            Contact Me
-          </button>
+          <Link to="/contact">
+            <button className="bg-blue-600 px-10 py-2 rounded-xl text-white font-semibold font-family-Poppins cursor-pointer hover:bg-blue-700">
+              Contact Me
+            </button>
+          </Link>
         </div>
       </nav>
 

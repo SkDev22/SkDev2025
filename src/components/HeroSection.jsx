@@ -25,7 +25,7 @@ export default function Example() {
             className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#0022ff] to-[#c300ff] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"
           />
         </div>
-        <div className="mx-auto max-w-3xl pt-[136px]">
+        <div className="mx-auto max-w-3xl pt-[100px] sm:pt-[136px]">
           <div className="text-center">
             <h1 className="text-5xl font-bold tracking-tight text-balance text-blue-600 sm:text-[85px] font-family-Poppins">
               Software Engineer and Designer
