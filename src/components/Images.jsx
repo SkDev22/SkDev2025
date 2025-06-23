@@ -14,7 +14,7 @@ const Images = () => {
       <img
         src={my8}
         alt="Sahan Image 02"
-        className=" w-[300px] h-[50%] md:rotate-x-20 md:-rotate-y-20 rotate-x-0 -rotate-y-0 rounded-xl hidden md:flex"
+        className=" w-[300px] h-[50%] md:rotate-x-15 md:rotate-y-20 rotate-x-0 -rotate-y-0 rounded-xl hidden md:flex"
       />
       <img
         src={my3}
