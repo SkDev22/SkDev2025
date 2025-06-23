@@ -71,7 +71,7 @@ export default function Example() {
 
           <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
             {features.map((feature) => (
-              <div key={feature.name} className="shadow-md p-2">
+              <div key={feature.name} className="shadow-md p-2 rounded-xl">
                 <dt className="font-medium text-white text-2xl">
                   {feature.name}
                 </dt>
@@ -135,13 +135,18 @@ export default function Example() {
       </div>
       <div className="h-[300px] px-20">
         <FallingText
-          text={`React Bits is a library of animated and interactive React components designed to streamline UI development and simplify your workflow.`}
+          // text={`React Bits is a library of animated and interactive React components designed to streamline UI development and simplify your workflow.`}
+          text={`I provide modern web, mobile and graphic design solutions including interactive UI components, responsive websites, custom dashboards, and streamlined workflows designed to elevate your brand and enhance user experience.`}
           highlightWords={[
-            "React",
-            "Bits",
-            "animated",
-            "components",
-            "simplify",
+            "web",
+            "mobile",
+            "graphic",
+            "design",
+            "elevate",
+            "enhance",
+            "experience",
+            "dashboards",
+
           ]}
           highlightClass="highlighted"
           trigger="hover"
@@ -149,7 +154,6 @@ export default function Example() {
           wireframes={false}
           gravity={0.56}
           fontSize="2rem"
-          // mouseConstraintStiffness={0.9}
           mouseConstraintStiffness={1.8}
         />
       </div>
