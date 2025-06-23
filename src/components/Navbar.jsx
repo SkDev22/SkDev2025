@@ -79,9 +79,9 @@ const Navbar = () => {
               <div className="flex items-center justify-between">
                 <a href="#" className="-m-1.5 p-1.5">
                   <span className="sr-only">Sahan Kalhara</span>
-                  <h1 className="text-2xl font-semibold text-blue-600 font-family-EduNSWACTCursive">
+                  <Link to="/"><h1 className="text-2xl font-semibold text-blue-600 font-family-EduNSWACTCursive">
                     SkDev
-                  </h1>
+                  </h1></Link>
                 </a>
                 <button
                   type="button"
