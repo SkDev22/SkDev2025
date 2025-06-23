@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import my5 from "../assets/my5.jpeg";
+import Resume from "../assets/Resume.pdf";
 
 export default function Example() {
   return (
@@ -35,7 +36,7 @@ export default function Example() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
               <a
-                href="#"
+                href={Resume} download="Resume.pdf"
                 className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-xs font-family-Poppins hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 Download CV
