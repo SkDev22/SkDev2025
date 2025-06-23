@@ -60,9 +60,9 @@ export default function Example() {
             text="What I Offer"
             delay={300}
             animateBy="words"
-            className="text-[60px] font-bold mb-8 text-blue-600 leading-12 font-family-Poppins"
+            className="md:text-[60px] text-5xl font-bold mb-8 mt-20 md:mt-0 text-blue-600 leading-12 font-family-Poppins"
           />
-          <p className="mt-4 text-gray-200">
+          <p className="mt-4 text-gray-200 font-family-Ubuntu text-justify">
             I craft modern various solutions, including responsive websites,
             custom dashboards, and eye catching designs using React, Tailwind,
             backend APIs and many tools designed to boost business efficiency
@@ -87,7 +87,7 @@ export default function Example() {
             className="custom-spotlight-card"
             spotlightColor="rgba(0, 229, 255, 0.2)"
           >
-            <h1 className="font-family-Poppins text-xl font-bold">
+            <h1 className="font-family-Poppins text-xl font-bold text-center">
               Web Development
             </h1>
             <TbWorldCode className="text-8xl" />
@@ -105,7 +105,7 @@ export default function Example() {
             className="custom-spotlight-card"
             spotlightColor="rgba(0, 229, 255, 0.2)"
           >
-            <h1 className="font-family-Poppins text-xl font-bold">
+            <h1 className="font-family-Poppins text-xl font-bold text-center">
               UI/UX Design
             </h1>
             <PiNotePencilBold className="text-8xl" />
@@ -114,7 +114,7 @@ export default function Example() {
             className="custom-spotlight-card"
             spotlightColor="rgba(0, 229, 255, 0.2)"
           >
-            <h1 className="font-family-Poppins text-xl font-bold">
+            <h1 className="font-family-Poppins text-xl font-bold text-center">
               Graphic Design
             </h1>
             <ImPen className="text-8xl" />
