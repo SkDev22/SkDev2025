@@ -33,18 +33,16 @@ const About = () => {
             <p className="text-pretty text-white font-medium text-lg md:text-justify text-left font-family-Ubuntu ">
               From a young age, I&apos;ve been deeply fascinated by how technology
               can reshape the way we live, work, and connect. I wrote my first
-              line of code out of curiosity and never looked back — since then,
+              line of code out of curiosity and never looked back. Since then,
               I&apos;ve been obsessed with crafting systems that are both beautiful
               and powerful.
               <br />
-              <br /> While most kids were playing games, I was dissecting how
-              those games were built, designing UIs, experimenting with
-              websites, and imagining platforms that could make people&apos;s lives
-              easier. What began as a passion quickly evolved into a purpose.
-              I&apos;m especially driven by the intersection of creativity and code —
-              whether it's building full-stack applications, designing
+              <br /> What began as a passion quickly evolved into a purpose.
+              I&apos;m especially driven by the intersection of creativity and
+              code. Whether it&apos;s building full-stack applications, designing
               user-friendly dashboards, or exploring AI-powered tools that
-              improve everyday decision-making.
+              improve everyday decision-making, I&apos;m always looking for new
+              challenges and opportunities to grow.
               <br />
               <br /> I believe the best products come from empathy, iteration,
               and a deep understanding of the people who use them. Today, I&apos;m
