@@ -7,7 +7,7 @@ import { ToastContainer, toast } from "react-toastify";
 const features = [
   {
     name: "Phone",
-    description: ["071 637 8320 ", " /", " 071 637 8320"],
+    description: ["071 637 8320 ", " /", " 078 675 4104"],
   },
   {
     name: "Email",
