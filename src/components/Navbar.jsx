@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Dialog, DialogPanel } from "@headlessui/react";
+import { useState, Fragment } from "react";
+import { Dialog, DialogPanel, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link, useLocation } from "react-router-dom";
 
@@ -63,61 +63,67 @@ const Navbar = () => {
       </nav>
 
       {/* Mobile menu */}
-      <Dialog
-        open={mobileMenuOpen}
-        onClose={setMobileMenuOpen}
-        className="lg:hidden"
-      >
-        <div className="fixed inset-0 z-50" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-blue-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-          <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img
-                alt=""
-                src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-                className="h-8 w-auto"
-              />
-            </a>
-            <button
-              type="button"
-              onClick={() => setMobileMenuOpen(false)}
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
-            >
-              <span className="sr-only">Close menu</span>
-              <XMarkIcon aria-hidden="true" className="size-6" />
-            </button>
-          </div>
-          <div className="mt-6 flow-root">
-            <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="space-y-2 py-6">
-                {navigation.map((item) => (
-                  <Link
-                    key={item.name}
-                    to={item.href}
-                    className={`-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold ${
-                      currentPath === item.href
-                        ? "text-blue-600 underline underline-offset-4"
-                        : "text-gray-900 hover:bg-gray-50"
-                    }`}
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    {item.name}
-                  </Link>
-                ))}
-              </div>
-              {/* <div className="py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >
-                  Log in
+      <Transition show={mobileMenuOpen} as={Fragment}>
+        <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
+          <div className="fixed inset-0 z-50" />
+          <Transition.Child
+            as={Fragment}
+            enter="transition ease-in-out duration-500 transform"
+            enterFrom="translate-x-full opacity-0"
+            enterTo="translate-x-0 opacity-100"
+            leave="transition ease-in-out duration-400 transform"
+            leaveFrom="translate-x-0 opacity-100"
+            leaveTo="translate-x-full opacity-0"
+          >
+            <DialogPanel className="fixed top-0 right-0 z-50 w-full bg-[#0D1B2A] px-10 py-20 rounded-b-3xl sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+              <div className="flex items-center justify-between">
+                <a href="#" className="-m-1.5 p-1.5">
+                  <span className="sr-only">Sahan Kalhara</span>
+                  <h1 className="text-2xl font-semibold text-blue-600 font-family-EduNSWACTCursive">
+                    SkDev
+                  </h1>
                 </a>
-              </div> */}
-            </div>
-          </div>
-        </DialogPanel>
-      </Dialog>
+                <button
+                  type="button"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="-m-2.5 rounded-md p-2.5 text-gray-700"
+                >
+                  <span className="sr-only">Close menu</span>
+                  <XMarkIcon aria-hidden="true" className="size-6 text-white" />
+                </button>
+              </div>
+              <div className="mt-6 flow-root">
+                <div className="-my-6 divide-y divide-gray-500/10">
+                  <div className="space-y-2 py-6">
+                    {navigation.map((item) => (
+                      <Link
+                        key={item.name}
+                        to={item.href}
+                        className={`-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold ${
+                          currentPath === item.href
+                            ? "text-white underline underline-offset-4"
+                            : "text-white hover:bg-gray-50"
+                        }`}
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
+                        {item.name}
+                      </Link>
+                    ))}
+                  </div>
+                  <div className="py-6">
+                    <Link
+                      to="/contact"
+                      className="bg-blue-600 px-10 py-2 rounded-xl text-white font-semibold font-family-Poppins cursor-pointer hover:bg-blue-700"
+                    >
+                      Contact Me
+                      </Link>
+                  </div>
+                </div>
+              </div>
+            </DialogPanel>
+          </Transition.Child>
+        </Dialog>
+      </Transition>
     </div>
   );
 };

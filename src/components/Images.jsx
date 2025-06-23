@@ -5,7 +5,7 @@ import my8 from "../assets/my8.jpeg";
 
 const Images = () => {
   return (
-    <div className="h-auto top-0 flex justify-between px-10 bg-[#0D1B2A]">
+    <div className="h-auto top-0 flex flex-col md:flex-row justify-between px-10 bg-[#0D1B2A]">
       <img
         src={my1}
         alt="Sahan Image 01"
@@ -19,7 +19,7 @@ const Images = () => {
       <img
         src={my3}
         alt="Sahan Image 03"
-        className=" w-[300px] h-[50%] rotate-x-20 -rotate-y-20 rounded-xl hidden md:flex"
+        className=" w-[300px] h-[50%] md:rotate-x-20 md:-rotate-y-20 rotate-x-0 -rotate-y-0 mt-10 md:mt-0 rounded-xl"
       />
       <img
         src={my2}

@@ -5,7 +5,7 @@ export default function Example() {
   return (
     <div className="bg-[#0D1B2A]">
       <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
-        <div className="relative isolate overflow-hidden bg-[#1B263B] px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+        <div className="relative isolate overflow-hidden bg-transparent md:bg-[#1B263B] px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
           <svg
             viewBox="0 0 1024 1024"
             aria-hidden="true"
@@ -48,9 +48,9 @@ export default function Example() {
               </Link>
             </div>
           </div>
-          <div className="relative mt-16 h-80 lg:mt-8">
+          <div className="relative mt-16 md:h-80 h-90 lg:mt-8">
             <img
-              alt="App screenshot"
+              alt="Sahan Kalhara"
               //   src="https://tailwindcss.com/plus-assets/img/component-images/dark-project-app-screenshot.png"
               src={my5}
               width={1824}
