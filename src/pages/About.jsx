@@ -22,7 +22,7 @@ const About = () => {
             className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#0022ff] to-[#c300ff] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"
           />
         </div>
-        <div className="md:mx-auto w-full md:pt-[135px] pt-24 flex md:flex-row flex-col justify-between items-start md:px-14 px-6 ">
+        <div className="md:mx-auto w-full md:pt-[135px] pt-24 flex md:flex-row flex-col justify-between items-start md:px-14 px-2 ">
           <div className="flex-1 md:pl-16 pl-0">
             <BlurText
               text="I'm Sahan Kalhara"
@@ -30,7 +30,7 @@ const About = () => {
               animateBy="words"
               className="md:text-[64px] text-5xl font-bold mb-8 text-blue-600 leading-12 font-family-Poppins"
             />
-            <p className="text-pretty text-white font-medium text-lg md:text-justify text-justify font-family-Ubuntu ">
+            <p className="text-pretty text-white font-medium text-lg md:text-justify text-left font-family-Ubuntu ">
               From a young age, I&apos;ve been deeply fascinated by how
               technology can reshape the way we live, work, and connect. I wrote
               my first line of code out of curiosity and never looked back.
