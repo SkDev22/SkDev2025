@@ -11,7 +11,7 @@ const About = () => {
       </header>
       <div className="relative isolate px-6 pt-5 lg:px-8">
         <div
-          aria-hidden="true" 
+          aria-hidden="true"
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
         >
           <div
@@ -25,31 +25,31 @@ const About = () => {
         <div className="md:mx-auto w-full md:pt-[135px] pt-24 flex md:flex-row flex-col justify-between items-start md:px-14 px-6 ">
           <div className="flex-1 md:pl-16 pl-0">
             <BlurText
-              text="I&apos;m Sahan Kalhara"
+              text="I'm Sahan Kalhara"
               delay={300}
               animateBy="words"
               className="md:text-[64px] text-5xl font-bold mb-8 text-blue-600 leading-12 font-family-Poppins"
             />
-            <p className="text-pretty text-white font-medium text-lg md:text-justify text-left font-family-Ubuntu ">
-              From a young age, I&apos;ve been deeply fascinated by how technology
-              can reshape the way we live, work, and connect. I wrote my first
-              line of code out of curiosity and never looked back. Since then,
-              I&apos;ve been obsessed with crafting systems that are both beautiful
-              and powerful.
+            <p className="text-pretty text-white font-medium text-lg md:text-justify text-justify font-family-Ubuntu ">
+              From a young age, I&apos;ve been deeply fascinated by how
+              technology can reshape the way we live, work, and connect. I wrote
+              my first line of code out of curiosity and never looked back.
+              Since then, I&apos;ve been obsessed with crafting systems that are
+              both beautiful and powerful.
               <br />
               <br /> What began as a passion quickly evolved into a purpose.
               I&apos;m especially driven by the intersection of creativity and
-              code. Whether it&apos;s building full-stack applications, designing
-              user-friendly dashboards, or exploring AI-powered tools that
-              improve everyday decision-making, I&apos;m always looking for new
-              challenges and opportunities to grow.
+              code. Whether it&apos;s building full-stack applications,
+              designing user-friendly dashboards, or exploring AI-powered tools
+              that improve everyday decision-making, I&apos;m always looking for
+              new challenges and opportunities to grow.
               <br />
               <br /> I believe the best products come from empathy, iteration,
-              and a deep understanding of the people who use them. Today, I&apos;m
-              focused on building intelligent web and mobile experiences,
-              collaborating on innovative projects, and always learning
-              something new. My mission? To engineer solutions that leave a
-              meaningful impact.
+              and a deep understanding of the people who use them. Today,
+              I&apos;m focused on building intelligent web and mobile
+              experiences, collaborating on innovative projects, and always
+              learning something new. My mission? To engineer solutions that
+              leave a meaningful impact.
             </p>
           </div>
           <div className="flex-1 flex justify-center items-center">
