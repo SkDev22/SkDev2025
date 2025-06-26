@@ -134,7 +134,7 @@ const Contact = () => {
           <form
             ref={form}
             onSubmit={sendEmail}
-            className="mx-auto max-w-xl mt-10"
+            className="mx-auto max-w-xl mt-10 font-family-Poppins"
           >
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <div>
