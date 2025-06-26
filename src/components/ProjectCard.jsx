@@ -35,7 +35,9 @@ const ProjectCard = ({
         justifyContent: "start",
         gap: "1rem",
         color: "#ffffff",
-        ...(window.innerWidth >= 768 ? { width: "400px", height: "250px" } : {}),
+        ...(window.innerWidth >= 768
+          ? { width: "400px", height: "250px" }
+          : {}),
       }}
     >
       {Icon && (
@@ -53,7 +55,7 @@ const ProjectCard = ({
           <Link
             to={githubLink}
             target="_blank"
-            className="hover:text-blue-600 flex items-center gap-2"
+            className="hover:text-blue-600 flex items-center gap-2 font-family-Ubuntu"
           >
             <FaLink />
             GitHub
@@ -63,7 +65,7 @@ const ProjectCard = ({
           <Link
             to={liveLink}
             target="_blank"
-            className="hover:text-blue-600 flex items-center gap-2"
+            className="hover:text-blue-600 flex items-center gap-2 font-family-Ubuntu"
           >
             <TbWorldWww />
             Live Website
