@@ -130,7 +130,7 @@ const Contact = () => {
             ))}
           </dl>
         </div>
-        <div className="px-6">
+        <div className="md:px-6 px-2">
           <form
             ref={form}
             onSubmit={sendEmail}
