@@ -64,7 +64,11 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       <Transition show={mobileMenuOpen} as={Fragment}>
-        <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
+        <Dialog
+          open={mobileMenuOpen}
+          onClose={setMobileMenuOpen}
+          className="lg:hidden"
+        >
           <div className="fixed inset-0 z-50" />
           <Transition.Child
             as={Fragment}
@@ -80,9 +84,9 @@ const Navbar = () => {
                 <a href="#" className="-m-1.5 p-1.5">
                   <span className="sr-only">Sahan Kalhara</span>
                   <Link to="/">
-                  <h1 className="text-2xl font-semibold text-blue-600 font-family-EduNSWACTCursive">
-                    SkDev
-                  </h1>
+                    <h1 className="text-2xl font-semibold text-blue-600 font-family-EduNSWACTCursive">
+                      SkDev
+                    </h1>
                   </Link>
                 </a>
                 <button
@@ -101,7 +105,7 @@ const Navbar = () => {
                       <Link
                         key={item.name}
                         to={item.href}
-                        className={`-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold ${
+                        className={`-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold font-family-Poppins ${
                           currentPath === item.href
                             ? "text-white underline underline-offset-4"
                             : "text-white hover:bg-gray-50"
@@ -118,7 +122,7 @@ const Navbar = () => {
                       className="bg-blue-600 px-10 py-2 rounded-xl text-white font-semibold font-family-Poppins cursor-pointer hover:bg-blue-700"
                     >
                       Contact Me
-                      </Link>
+                    </Link>
                   </div>
                 </div>
               </div>
