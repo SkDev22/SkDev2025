@@ -81,37 +81,37 @@ export default function Example() {
             className="custom-spotlight-card"
             spotlightColor="rgba(0, 229, 255, 0.2)"
           >
-            <h1 className="font-family-Poppins text-xl font-bold text-center">
+            <h1 className="font-family-Poppins md:text-xl text-lg font-bold text-center">
               Web Development
             </h1>
-            <TbWorldCode className="text-8xl" />
+            <TbWorldCode className="md:text-7xl text-5xl mt-5" />
           </SpotlightCard>
           <SpotlightCard
             className="custom-spotlight-card"
             spotlightColor="rgba(0, 229, 255, 0.2)"
           >
-            <h1 className="font-family-Poppins text-xl font-bold text-center">
+            <h1 className="font-family-Poppins md:text-xl text-lg font-bold text-center">
               Mobile App Development
             </h1>
-            <CiMobile3 className="text-8xl" />
+            <CiMobile3 className="md:text-7xl text-5xl mt-5" />
           </SpotlightCard>
           <SpotlightCard
             className="custom-spotlight-card"
             spotlightColor="rgba(0, 229, 255, 0.2)"
           >
-            <h1 className="font-family-Poppins text-xl font-bold text-center">
+            <h1 className="font-family-Poppins md:text-xl text-gl font-bold text-center">
               UI/UX Design
             </h1>
-            <PiNotePencilBold className="text-8xl" />
+            <PiNotePencilBold className="md:text-7xl text-5xl mt-5" />
           </SpotlightCard>
           <SpotlightCard
             className="custom-spotlight-card"
             spotlightColor="rgba(0, 229, 255, 0.2)"
           >
-            <h1 className="font-family-Poppins text-xl font-bold text-center">
+            <h1 className="font-family-Poppins md:text-xl text-gl font-bold text-center">
               Graphic Design
             </h1>
-            <ImPen className="text-8xl" />
+            <ImPen className="md:text-7xl text-5xl mt-5" />
           </SpotlightCard>
         </div>
         <div
