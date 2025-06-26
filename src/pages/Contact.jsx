@@ -23,8 +23,6 @@ const features = [
   },
 ];
 
-
-
 const Contact = () => {
   const form = useRef();
 
@@ -83,9 +81,6 @@ const Contact = () => {
       );
   };
 
-
-
-
   return (
     <div className="bg-[#0D1B2A]">
       <header className="absolute inset-x-0 top-0 z-50 px-10">
@@ -111,7 +106,7 @@ const Contact = () => {
             animateBy="words"
             className="text-[52px] font-bold mb-8 text-blue-600 leading-12 font-family-Poppins"
           />
-          <p className="mt-4 text-gray-200 text-justify">
+          <p className="mt-4 text-gray-200 text-justify font-family-Ubuntu">
             I specialize in crafting modern, responsive websites, User
             Interfaces, and visually striking graphic designs using React,
             Tailwind CSS, backend APIs and many tools. Whether you need a
@@ -125,10 +120,10 @@ const Contact = () => {
           <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
             {features.map((feature) => (
               <div key={feature.name} className="">
-                <dt className="font-medium text-white text-2xl">
+                <dt className="font-medium text-white text-2xl font-family-Poppins">
                   {feature.name}
                 </dt>
-                <dd className="mt-2 text-sm text-gray-200">
+                <dd className="mt-2 text-sm text-gray-200 font-family-Ubuntu">
                   {feature.description}
                 </dd>
               </div>
@@ -136,7 +131,11 @@ const Contact = () => {
           </dl>
         </div>
         <div className="px-6">
-          <form ref={form} onSubmit={sendEmail} className="mx-auto max-w-xl mt-10">
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className="mx-auto max-w-xl mt-10"
+          >
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <div>
                 <label
