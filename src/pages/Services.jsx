@@ -11,7 +11,7 @@ const features = [
   {
     name: "Web Development",
     description:
-      "Designed by Good GoodWeb development refers to the process of building and maintaining websites or web applications. It encompasses a range of activities, including web design, coding, programming, and content creation.",
+      "Good Web development refers to the process of building and maintaining websites or web applications. It encompasses a range of activities, including web design, coding, programming, and content creation.",
   },
   {
     name: "Mobile App Development",
