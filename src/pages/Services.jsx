@@ -30,7 +30,7 @@ const features = [
   },
 ];
 
-export default function Example() {
+export default function Services() {
   return (
     <div className="bg-[#0D1B2A]">
       <header className="absolute inset-x-0 top-0 z-50 px-10">
