@@ -34,8 +34,8 @@ This portfolio is not just a static site. it's a living project that I continue 
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/SkDev22/project-name.git
-cd project-name
+git clone https://github.com/SkDev22/SkDev2025.git
+cd SkDev2025
 ```
 
 ### Frontend Setup
