@@ -6,26 +6,38 @@ import Projects from "./pages/Projects";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import { Routes, Route } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { superballs } from "ldrs";
+superballs.register();
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2500);
+  }, []);
+
   return (
     <div className="scroll-smooth">
-      {/* <AnimatedCursor
-        innerSize={15}
-        outerSize={30}
-        innerScale={1.2}
-        outerScale={1.8}
-        innerStyle={{ backgroundColor: "#ffffff" }}
-        outerStyle={{ backgroundColor: "transparent" }}
-      /> */}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      <Footer />
+      {loading ? (
+        <div className="loader-container">
+          <l-superballs size="70" speed="1.4" color="#155dfc" />
+        </div>
+      ) : (
+        <>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+          <Footer />
+        </>
+      )}
     </div>
   );
 };
