@@ -5,6 +5,7 @@ import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
+// import SplitText from "../../ReactBits/SplitText/SplitText";
 
 export default function Example() {
   return (
@@ -30,6 +31,19 @@ export default function Example() {
             <h1 className="text-5xl font-bold tracking-tight text-balance text-blue-600 sm:text-[85px] font-family-Poppins">
               Software Engineer and Designer
             </h1>
+            {/* <SplitText
+              text="Software Engineer and Designer"
+              className="text-2xl font-bold text-balance text-blue-600 sm:text-[85px] font-family-Poppins"
+              delay={100}
+              duration={0.6}
+              ease="power3.out"
+              splitType="chars"
+              from={{ opacity: 0, y: 40 }}
+              to={{ opacity: 1, y: 0 }}
+              threshold={0.1}
+              rootMargin="-100px"
+              textAlign="center"
+            /> */}
             <p className="mt-8 text-lg font-medium text-pretty text-white font-family-Ubuntu sm:text-xl/8 ">
               Hello! I'm{" "}
               <span className="text-blue-600 font-semibold px-2 text-[22px] rounded-lg">
